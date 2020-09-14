@@ -1,0 +1,6 @@
+<%= form_for @admins, url:{action: "create"} do |f| %>
+<%= render partial: "admins/newform" , locals: {:f => f} %>
+<p>
+	<%= f.submit('Login') %>
+</p>
+<% end %>

@@ -1,0 +1,60 @@
+<p>
+	<%= f.label :FirstName %>
+	<%= f.text_field :fname,required: true,placeholder: 'this is required field' %>
+</p>
+
+<p>
+	<%= f.label :MiddleName  %>
+	<%= f.text_field :mname,placeholder: 'this field is optional' %>
+</p>
+
+<p>
+	<%= f.label :LastName %>
+	<%= f.text_field :lname,required: true, placeholder: 'this is required field' %>
+</p>
+
+<p>
+	<%= f.label :Email %>
+	<%= f.email_field :emailid, required: true %>
+</p>
+
+<p>
+	<%= f.label :ImageUrl %>
+	<%= f.url_field :imageurl %>
+</p>
+
+
+<p>
+	<%= f.label :Date_of_birth %>
+	<%= f.date_field :dob ,required: true,placeholder: 'this is required field'%>
+</p>
+
+<p>
+	<%= f.label :Phone_Number %>
+	<%= f.telephone_field :telnp,required: true,placeholder: 'this is required field' %>
+</p>
+
+<p>
+	<%= f.label :Father_Name %>
+	<%= f.text_field :fathername ,required: true , placeholder: 'this is required field'%>
+</p>
+
+<p>
+	<%= f.label :gender %>
+	<%= f.text_field :gender,required: true,placeholder: 'gender',placeholder: 'this is required field' %>
+</p>
+
+<p>
+	<%= f.label :Blood_group %>
+	<%= f.text_field :bloodgroup,placeholder: 'this field is optional' %>
+</p>
+
+<p>
+	<%= f.label :School_Name %>
+	<%= f.text_field :schoolname ,required: true,placeholder: 'this is required field'%>
+</p>
+
+<p>
+	<%= f.label :Year_Of_passing %>
+	<%= f.text_field :yearofpass,required: true ,placeholder:'this is required field'%>
+</p>

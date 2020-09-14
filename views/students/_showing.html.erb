@@ -1,0 +1,21 @@
+<table border="1" width="50%" cellpadding="2" cellspacing="2">
+	<thead>
+		<th>First Name</th>
+		<th>Last Name</th>
+		<th>Email id</th>
+		<th>Phone Number</th>
+		<th colspan="3">Action</th>
+	</thead>
+	<tbody>
+		<% @students.each do |c| %>
+		<tr>
+			<td><%= c.fname %></td>
+            <td><%= c.lname %></td>
+            <td><%= c.emailid %></td>
+            <td><%= c.telnp %></td>
+            <td><%= link_to "edit_the_data", {controller: "students" , action: "edit" ,id:c.id} %></td>
+            <td><%= link_to "delete_the_data", student_path(c.id),method: :delete, :data=>{:confirm => "Are You sure and want to del this record>"} %></td>
+		</tr>
+	    <% end %>
+	</tbody>
+</table>
